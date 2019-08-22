@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './scss/App.css';
 import Customers from './components/customers';
 
 class App extends Component {
@@ -8,9 +7,24 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">React Express Starter</h1>
+          <h1 className="App-title">React Show Off</h1>
         </header>
+
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Teleport</a></li>
+            <li><a href="#">Anthem</a></li>
+          </ul>
+        </nav>
+
+        <div className="panel-1">@@@</div>
+        <div className="panel-2">#@@</div>
+        <div className="panel-3">##@</div>
+        <div className="panel-4">###</div>
+        <div className="panel-5">@##</div>
+
+
         <Customers />
       </div>
     );

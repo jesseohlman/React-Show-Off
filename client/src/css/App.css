@@ -1,0 +1,40 @@
+.profile-img {
+  border-radius: 999px;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black; }
+
+.panel, .panel-1, .panel-2, .panel-3, .panel-4, .panel-5 {
+  padding: 12px;
+  background: #b3ff00;
+  border: 5px solid #329b1c;
+  height: 150px;
+  width: 200px; }
+
+.panel:hover, .panel-1:hover, .panel-2:hover, .panel-3:hover, .panel-4:hover, .panel-5:hover {
+  background: #364d00; }
+
+h1 {
+  color: orange; }
+
+p {
+  color: orange; }
+
+nav ul {
+  background-color: #4b4646;
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+nav li {
+  display: inline-block; }
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none; }
+
+nav a:hover {
+  background-color: #807777;
+  color: white; }

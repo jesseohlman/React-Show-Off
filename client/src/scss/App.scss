@@ -1,0 +1,44 @@
+@import "profile";
+@import "panel";
+
+ 
+
+$text-color: white;
+$title-color: orange;
+$bg-color: rgb(75, 70, 70);
+
+
+
+h1{
+    color: $title-color;
+}
+
+p{
+    color: $title-color;
+}
+
+nav{
+
+     ul{
+        background-color: $bg-color;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+     }
+
+     li{
+        display: inline-block;
+     }
+
+     a{
+        color: $text-color;
+        display: inline-block;
+        padding: 10px 20px;
+        text-decoration: none;
+     }
+
+     a:hover{
+         background-color: $bg-color * 1.7;
+         color: $text-color;
+     }
+}

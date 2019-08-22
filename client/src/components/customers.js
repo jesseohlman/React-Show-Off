@@ -10,20 +10,13 @@ class Customers extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/customers')
-      .then(res => res.json())
-      .then(customers => this.setState({customers}, () => console.log('Customers fetched...', customers)));
   }
 
   render() {
     return (
       <div>
-        <h2>Customers</h2>
-        <ul>
-        {this.state.customers.map(customer => 
-          <li key={customer.id}>{customer.firstName} {customer.lastName}</li>
-        )}
-        </ul>
+        <img className="profile-img" src="https://www.pennington.com/-/media/Images/Pennington-NA/US/blog/Wild-Bird/Hummingbird-Moths/hummingbird-moth.jpg?h=599&la=en&w=800&hash=2AF0DE2BDAD4865FC2DE7D5D617157322D8E2B35"></img>
+        <p>me the moth</p>
       </div>
     );
   }

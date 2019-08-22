@@ -18,5 +18,13 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "express": "^4.16.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesseohlman/React-Show-Off.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jesseohlman/React-Show-Off/issues"
+  },
+  "homepage": "https://github.com/jesseohlman/React-Show-Off#readme"
 }
