@@ -1,55 +1,34 @@
-import React, { useState } from 'react';
-import './css/App.css';
-import {Link, BrowserRouter as Router} from 'react-router-dom'
-import { Card, CardImg, CardHeader } from "shards-react";
+import React, { Component } from 'react';
+import './scss/App.css';
+import Customers from './components/customers';
 
-
-function App() {
-  const [user, setUser] = useState([
-    {
-      name: "Joe",
-      email: "email@gmail.com",
-      password: "1234567890"
-    },
-    {
-      name: "Bobby",
-      email: "email2@gmail.com",
-      password: "1234567890"
-    },
-  ]);
-
-  const addUser = input => {
-
-  }
-
+class App extends Component {
+  render() {
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">React Show Off</h1>
         </header>
-        <main>
-          <Router>
-            <nav>
-              <ul>
-                <li><Link className="link" to="#">Code</Link></li>
-                <li><Link className="link" to="#">Projects</Link></li>
-                <li><Link className="link" to="#">My Dackground</Link></li>
-              </ul>
-            </nav>
-          </Router>
-        </main>
 
-      <Card style={{maxWidth: "300px"}}>
-        <CardHeader>ART #1</CardHeader>
-        <CardImg className="card-img" src="https://art.art/wp-content/uploads/2019/05/mucha_500.jpg"/>
-      </Card>
-        
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Teleport</a></li>
+            <li><a href="#">Anthem</a></li>
+          </ul>
+        </nav>
+
+        <div className="panel-1">@@@</div>
+        <div className="panel-2">#@@</div>
+        <div className="panel-3">##@</div>
+        <div className="panel-4">###</div>
+        <div className="panel-5">@##</div>
 
 
         <Customers />
       </div>
     );
   }
-
+}
 
 export default App;
