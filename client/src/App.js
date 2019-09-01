@@ -1,9 +1,27 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './scss/App.css';
+import { Card, CardImg, CardHeader } from "shards-react";
 import Customers from './components/customers';
 
-class App extends Component {
-  render() {
+
+function App() {
+  const [user, setUser] = useState([
+    {
+      name: "Joe",
+      email: "email@gmail.com",
+      password: "1234567890"
+    },
+    {
+      name: "Bobby",
+      email: "email2@gmail.com",
+      password: "1234567890"
+    },
+  ]);
+
+  const addUser = input => {
+
+  }
+
     return (
       <div className="App">
         <header className="App-header">
@@ -18,17 +36,17 @@ class App extends Component {
           </ul>
         </nav>
 
-        <div className="panel-1">@@@</div>
-        <div className="panel-2">#@@</div>
-        <div className="panel-3">##@</div>
-        <div className="panel-4">###</div>
-        <div className="panel-5">@##</div>
+      <Card style={{maxWidth: "300px"}}>
+        <CardHeader>ART #1</CardHeader>
+        <CardImg className="card-img" src="https://art.art/wp-content/uploads/2019/05/mucha_500.jpg"/>
+      </Card>
+        
 
 
         <Customers />
       </div>
     );
   }
-}
+
 
 export default App;
