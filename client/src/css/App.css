@@ -30,15 +30,16 @@ nav ul {
   padding: 0;
   margin: 0;
   list-style: none; }
+
 nav li {
   display: inline-block; }
-nav a {
+
+nav .link {
   color: white;
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none; }
+
 nav a:hover {
   background-color: #807777;
   color: white; }
-
-/*# sourceMappingURL=App.css.map */
