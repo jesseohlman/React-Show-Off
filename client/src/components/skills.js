@@ -1,52 +1,54 @@
-import { Card, CardImg, CardHeader } from "shards-react";
+import React, { Component, useState } from 'react';
+import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Card, CardBody, CardTitle, CardSubtitle } from "shards-react";
 
+import Works from "./works";
+import SkillCard from "./sub-components/skillCard";
 
-function App() {
-  const [user, setUser] = useState([
+function Skills() {
+  const [skillCard, setSkillCard] = useState([
     {
-      name: "Joe",
-      email: "email@gmail.com",
-      password: "1234567890"
+      skill: "JavaScript",
+      experience: "2 years",
+      description: "Sed dictum semper bibendum. In quis solicitudin ante, which ex. Aenean nec elit nec felis dictum bibendum. Maecenas justo dui, fermentum in mi sed, gravid egestas lacus. Suspendisse magna velit, pulvinar nec nulla quis, tincidunt sollicitudin mauris. Sed and eros id orci egestas scelerisk non id nisi. Fusce aliquet neque has felis accumsan congue. Donec id malesuada ligula. In convallis ex id nis venenatis, placeat tempor purus auctor. Mauris and mollis enim. Nulla carried ante commodo velit faucibus, which blandit neque lacinia. Pellentesque commodo orci in metus aliquam viverra. Donec lobortis lobortis lorem vel pulvinar. Ut nec lacus ut dui rutrum rhoncus sit amet consectetur dolor. Vivamus sit amet is in magna finibus venenatis. In hac habitasse platea dictumst.",
+
     },
     {
-      name: "Bobby",
-      email: "email2@gmail.com",
-      password: "1234567890"
+      skill: "HTML",
+      experience: "2 years",
+      description: "Sed dictum semper bibendum. In quis solicitudin ante, which ex. Aenean nec elit nec felis dictum bibendum. Maecenas justo dui, fermentum in mi sed, gravid egestas lacus. Suspendisse magna velit, pulvinar nec nulla quis, tincidunt sollicitudin mauris. Sed and eros id orci egestas scelerisk non id nisi. Fusce aliquet neque has felis accumsan congue. Donec id malesuada ligula. In convallis ex id nis venenatis, placeat tempor purus auctor. Mauris and mollis enim. Nulla carried ante commodo velit faucibus, which blandit neque lacinia. Pellentesque commodo orci in metus aliquam viverra. Donec lobortis lobortis lorem vel pulvinar. Ut nec lacus ut dui rutrum rhoncus sit amet consectetur dolor. Vivamus sit amet is in magna finibus venenatis. In hac habitasse platea dictumst.",
     },
+    {
+      skill: "React",
+      experience: "1 year",
+      description: "Sed dictum semper bibendum. In quis solicitudin ante, which ex. Aenean nec elit nec felis dictum bibendum. Maecenas justo dui, fermentum in mi sed, gravid egestas lacus. Suspendisse magna velit, pulvinar nec nulla quis, tincidunt sollicitudin mauris. Sed and eros id orci egestas scelerisk non id nisi. Fusce aliquet neque has felis accumsan congue. Donec id malesuada ligula. In convallis ex id nis venenatis, placeat tempor purus auctor. Mauris and mollis enim. Nulla carried ante commodo velit faucibus, which blandit neque lacinia. Pellentesque commodo orci in metus aliquam viverra. Donec lobortis lobortis lorem vel pulvinar. Ut nec lacus ut dui rutrum rhoncus sit amet consectetur dolor. Vivamus sit amet is in magna finibus venenatis. In hac habitasse platea dictumst.",
+    }
   ]);
 
-  const addUser = input => {
-
+  function readMore(isExpanded) {
+    console.log(isExpanded);
   }
 
-    return (
-      <div className="App">
-        <header className="App-header">
-          <h1 className="App-title">React Show Off</h1>
-        </header>
-        <main>
-          <Router>
-            <nav>
-              <ul>
-                <li><Link className="link" to="#">Code</Link></li>
-                <li><Link className="link" to="#">Projects</Link></li>
-                <li><Link className="link" to="#">My Dackground</Link></li>
-              </ul>
-            </nav>
-          </Router>
-        </main>
+  return (
+    <div className="Skills">
+        <h1 className="title">Skills</h1>
 
-      <Card style={{maxWidth: "300px"}}>
-        <CardHeader>ART #1</CardHeader>
-        <CardImg className="card-img" src="https://art.art/wp-content/uploads/2019/05/mucha_500.jpg"/>
-      </Card>
-        
+        <div>
+          <ul className="card-list">
+          {skillCard.map((e, i) => {
+            return <li className="card-item">
+              <SkillCard skill={e.skill} experience={e.experience} description={e.description} readMore={readMore}/>
+            </li>
+          })}
+          </ul>
+          
+        </div>
 
 
-        <Customers />
+
       </div>
     );
   }
 
 
-export default App;
+export default Skills;

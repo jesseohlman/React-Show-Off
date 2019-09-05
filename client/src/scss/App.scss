@@ -1,26 +1,41 @@
 @import "profile";
 @import "panel";
-
+@import "skills";
+@import "./variables/variables";
  
 
-$text-color: white;
-$title-color: orange;
-$bg-color: rgb(75, 70, 70);
 
-
-
-h1{
+.title{
     color: $title-color;
+    padding: 10px 20px;
+    font-weight: bold;
 }
 
 p{
     color: $title-color;
 }
 
+
+.main-body{
+    display: flex;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+
+    position: absolute;
+    top: 36px; /* Header Height */
+    margin: 0px;
+    bottom: 20px; /* Footer Height */
+    width: 100%;    
+    background-image: linear-gradient(to bottom right, $primary-color, $secondary-color);
+
+
+}
+
 nav{
 
      ul{
-        background-color: $bg-color;
+        background-color: $primary-color;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -38,7 +53,7 @@ nav{
      }
 
      a:hover{
-         background-color: $bg-color * 1.7;
+         background-color: $primary-color * 1.7;
          color: $text-color;
      }
 }

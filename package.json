@@ -21,6 +21,8 @@
     "react-native": "^0.60.5",
     "react-native-elements": "^1.1.0",
     "react-router-dom": "^5.0.1",
+    "react-show-more-text": "^1.2.3",
+    "read-more-react": "^1.0.9",
     "shards-react": "^1.0.3"
   },
   "repository": {

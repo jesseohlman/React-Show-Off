@@ -19,14 +19,56 @@
 .panel-2 {
   background: yellow; }
 
-h1 {
-  color: orange; }
+.skill-card {
+  color: black;
+  margin: 10px;
+  background: #4b9d1a;
+  border: 2px solid #260226; }
+  .skill-card .card-header {
+    background: #3d8116; }
+  .skill-card .card-subtitle {
+    color: black; }
+  .skill-card .card-description {
+    width: 595px;
+    color: black; }
+
+.card-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+
+.card-item {
+  display: inline-block; }
+
+.title {
+  color: #730773;
+  padding: 10px 20px;
+  font-weight: bold; }
 
 p {
-  color: orange; }
+  color: #730773; }
+
+.main-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  top: 36px;
+  /* Header Height */
+  margin: 0px;
+  bottom: 20px;
+  /* Footer Height */
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#448f18), to(#c00bc0));
+  background-image: -webkit-linear-gradient(top left, #448f18, #c00bc0);
+  background-image: -o-linear-gradient(top left, #448f18, #c00bc0);
+  background-image: linear-gradient(to bottom right, #448f18, #c00bc0); }
 
 nav ul {
-  background-color: #4b4646;
+  background-color: #448f18;
   padding: 0;
   margin: 0;
   list-style: none; }
@@ -35,11 +77,11 @@ nav li {
   display: inline-block; }
 
 nav .link {
-  color: white;
+  color: black;
   display: inline-block;
   padding: 10px 20px;
   text-decoration: none; }
 
 nav a:hover {
-  background-color: #807777;
-  color: white; }
+  background-color: #74f329;
+  color: black; }

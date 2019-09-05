@@ -1,0 +1,32 @@
+@import "./variables/variables";
+
+
+.skill-card{
+    color: black;
+    margin: 10px;
+    background: $primary-color * 1.1;
+    border: 2px solid $secondary-color * .2;
+    
+    .card-header{
+        background: $primary-color * .9
+    }
+    .card-subtitle{
+        color: $text-color * 1.1
+    }
+
+    .card-description{
+        width: 595px;
+        color: $text-color;
+    }
+
+}
+
+.card-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+ }
+
+ .card-item{
+    display: inline-block;
+ }
