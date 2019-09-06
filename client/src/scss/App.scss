@@ -2,6 +2,7 @@
 @import "panel";
 @import "skills";
 @import "./variables/variables";
+@import "./projects";
  
 
 
@@ -18,16 +19,17 @@ p{
 
 .main-body{
     display: flex;
-    overflow: hidden;
     margin: 0px;
     padding: 0px;
 
-    position: absolute;
+    position: sticky; /* dictates body position/background */
     top: 36px; /* Header Height */
     margin: 0px;
     bottom: 20px; /* Footer Height */
-    width: 100%;    
-    background-image: linear-gradient(to bottom right, $primary-color, $secondary-color);
+    width: 100%;  
+    height: 100%;
+     
+    background: repeating-linear-gradient(to bottom right, $primary-color, $secondary-color);
 
 
 }

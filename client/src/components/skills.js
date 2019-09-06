@@ -6,7 +6,7 @@ import Works from "./works";
 import SkillCard from "./sub-components/skillCard";
 
 function Skills() {
-  const [skillCard, setSkillCard] = useState([
+  const [skillCards, setSkillCard] = useState([
     {
       skill: "JavaScript",
       experience: "2 years",
@@ -35,7 +35,7 @@ function Skills() {
 
         <div>
           <ul className="card-list">
-          {skillCard.map((e, i) => {
+          {skillCards.map((e, i) => {
             return <li className="card-item">
               <SkillCard skill={e.skill} experience={e.experience} description={e.description} readMore={readMore}/>
             </li>

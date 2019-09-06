@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+
 import Skills from "./components/skills"
 import Intro from "./components/intro"
+import Works from "./components/works"
+
 import './css/App.css';
 
 function App(){
@@ -24,7 +27,7 @@ function App(){
 
                 <li><Link className="link" to="/intro/">Intro</Link></li>
                   <li><Link className="link" to="/skills/">Skills</Link></li>
-                  <li><Link className="link" to="#">Projects</Link></li>
+                  <li><Link className="link" to="/works/">Works</Link></li>
                   <li><Link className="link" to="#">My Background</Link></li>
                 </ul>
               </nav>
@@ -32,6 +35,7 @@ function App(){
               
             <div className="main-body">
 
+              <Route path="/works/" component={Works} />
               <Route path="/skills/" component={Skills} />
               <Route path="/intro/" component={Intro} />
             </div>

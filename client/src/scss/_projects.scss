@@ -1,0 +1,90 @@
+@import "./variables/variables";
+
+.img-enlarge-size{
+    width: 1000px;
+    height: 800px;
+}
+
+
+  
+    .project-about{
+        background: $project-card-primary;
+        margin: 0px 25px 25px 25px;
+        border-radius: 50px;
+        padding: 25px 25px 25px 25px;
+        
+
+        .project-card-text{
+            margin: 10px;
+            color: $text-color;
+        }
+
+        .faded-border {
+            padding: 0px 0px 2px 0px;
+            margin: 0px;
+            position: relative;
+            background: linear-gradient(to right, $project-card-primary, $project-card-secondary, $project-card-primary);
+            
+    }
+    }
+
+
+.project-list{
+
+    padding: 0;
+    margin: 0;
+    list-style: none;
+ 
+
+     li{
+        display: inline-block;
+
+        img{
+            width: 400px;
+            height: 200px;
+            margin: 0px;
+            padding: 0px;
+        }
+    
+        .img-footer{
+            background: $project-card-primary;
+            padding: 20px;
+            margin: 0px 20px;
+            color: $text-color;
+        }
+
+        .project-btn{
+            align-content: center;
+            float: right;
+            background: $project-card-primary * .5;
+            text-decoration: none;
+            border: none;
+            color: $project-card-primary * 1.5;
+        }
+        .project-btn:hover{
+            background: $project-card-secondary;
+        }
+
+        #grocery-list-manager {
+            display: none;
+        }
+        #grocery-list-manager:checked + label > img {
+            @extend .img-enlarge-size
+        }
+
+        #blocipedia {
+            display: none;
+        }
+        #blocipedia:checked + label > img {
+            @extend .img-enlarge-size
+        }
+
+        #edm-tracker {
+            display: none;
+        }
+        #edm-tracker:checked + label > img {
+            @extend .img-enlarge-size
+        }
+     }
+   
+}

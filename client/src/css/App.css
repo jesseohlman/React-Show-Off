@@ -29,7 +29,7 @@
   .skill-card .card-subtitle {
     color: black; }
   .skill-card .card-description {
-    width: 595px;
+    width: 590px;
     color: black; }
 
 .card-list {
@@ -39,6 +39,60 @@
 
 .card-item {
   display: inline-block; }
+
+.img-enlarge-size, .project-list li #grocery-list-manager:checked + label > img, .project-list li #blocipedia:checked + label > img, .project-list li #edm-tracker:checked + label > img {
+  width: 1000px;
+  height: 800px; }
+
+.project-about {
+  background: tan;
+  margin: 0px 25px 25px 25px;
+  border-radius: 50px;
+  padding: 25px 25px 25px 25px; }
+  .project-about .project-card-text {
+    margin: 10px;
+    color: black; }
+  .project-about .faded-border {
+    padding: 0px 0px 2px 0px;
+    margin: 0px;
+    position: relative;
+    background: -webkit-gradient(linear, left top, right top, from(tan), color-stop(black), to(tan));
+    background: -webkit-linear-gradient(left, tan, black, tan);
+    background: -o-linear-gradient(left, tan, black, tan);
+    background: linear-gradient(to right, tan, black, tan); }
+
+.project-list {
+  padding: 0;
+  margin: 0;
+  list-style: none; }
+  .project-list li {
+    display: inline-block; }
+    .project-list li img {
+      width: 400px;
+      height: 200px;
+      margin: 0px;
+      padding: 0px; }
+    .project-list li .img-footer {
+      background: tan;
+      padding: 20px;
+      margin: 0px 20px;
+      color: black; }
+    .project-list li .project-btn {
+      -ms-flex-line-pack: center;
+      align-content: center;
+      float: right;
+      background: #695a46;
+      text-decoration: none;
+      border: none;
+      color: #ffffd2; }
+    .project-list li .project-btn:hover {
+      background: black; }
+    .project-list li #grocery-list-manager {
+      display: none; }
+    .project-list li #blocipedia {
+      display: none; }
+    .project-list li #edm-tracker {
+      display: none; }
 
 .title {
   color: #730773;
@@ -52,20 +106,21 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   margin: 0px;
   padding: 0px;
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
+  /* dictates body position/background */
   top: 36px;
   /* Header Height */
   margin: 0px;
   bottom: 20px;
   /* Footer Height */
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#448f18), to(#c00bc0));
-  background-image: -webkit-linear-gradient(top left, #448f18, #c00bc0);
-  background-image: -o-linear-gradient(top left, #448f18, #c00bc0);
-  background-image: linear-gradient(to bottom right, #448f18, #c00bc0); }
+  height: 100%;
+  background: -webkit-repeating-linear-gradient(top left, #448f18, #c00bc0);
+  background: -o-repeating-linear-gradient(top left, #448f18, #c00bc0);
+  background: repeating-linear-gradient(to bottom right, #448f18, #c00bc0); }
 
 nav ul {
   background-color: #448f18;
